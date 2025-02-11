@@ -5,24 +5,24 @@ let products = [
     {name: "Phone", price: 800, category: "Electronics"},
 ];
 
-//function getProductsByCategory(product_array, category) {
-//    return product_array.filter(product => product.category === category);
-//};
-//console.log(getProductsByCategory(products, "Electronics"));
+function getProductsByCategory(product_array, category) {
+    return product_array.filter(product => product.category === category);
+};
+console.log(getProductsByCategory(products, "Electronics"));
 
 //Task 2
 
-//function applyDiscount(products, discountRate) {
-//    return products.map(product => ({
-//        ...product,
-//        price: product.price - (product.price * discountRate)
-//    }
+function applyDiscount(products, discountRate) {
+    return products.map(product => ({
+        ...product,
+        price: product.price - (product.price * discountRate)
+    }
 
-//    ))
+    ))
     
-//};
+};
 
-//console.log(applyDiscount(products, .1));
+console.log(applyDiscount(products, .1));
 
 // Task 3
 
@@ -37,6 +37,14 @@ console.log(`total Rev. 2024: $${calculateTotalRevenue(sales)}`);
 // Task 4
 
 let employee = {name:"John Doe", salary:50000, position: "Manager"};
+
+function updateSalary(employee, percentageIncrease) {
+    return employee.salary += employee.salary * percentageIncrease;
+}
+
+
+
+
 
 
 
