@@ -40,9 +40,9 @@ let employee = {name:"John Doe", salary:50000, position: "Manager"};
 
 function updateSalary(employee, percentageIncrease) {
     return employee.salary += employee.salary * percentageIncrease;
-}
+};
 
-
+console.log(updateSalary(employee, .10));
 
 
 
